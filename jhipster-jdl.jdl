@@ -1,0 +1,23 @@
+
+
+
+entity Product {
+	name String,
+    stock Integer,
+    description String,
+    price Double
+}
+
+entity Category {
+	name String
+}
+
+relationship OneToMany {
+	Category{product} to Product
+}
+
+service all with serviceImpl
+
+dto * with mapstruct
+
+    
